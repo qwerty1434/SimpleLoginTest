@@ -5,8 +5,8 @@ JWT와 Spring Security를 활용한 로그인 로직을 공부하기 위한 간�
 application-API-KEY.properties파일을 생성해야 합니다.
 해당 파일은 MYSQL_URL, MYSQL_USERNAME, MYSQL_PASSWORD, jwt.header, jwt.secret, jwt.token-validity-in-seconds, jwt.auth 정보를 포함하고 있어야 합니다.
 
-## 필터
-
+# 설명
+## Filter
 - `JwtFilter`를 만듦
   - doFilter에서 로직을 실행하고
     1. request Header에서 토큰을 가져옴
@@ -36,3 +36,11 @@ application-API-KEY.properties파일을 생성해야 합니다.
   - `security.core.userdetails.User`는 `UserDetails`인터페이스를 구현한 구현체 중 하나
 - AuthService에서 Authentication을 생성하기 위해 `authenticationManagerBuilder.getObject().authenticate(authenticationToken);`를 호출할 때 실행됨
 - UserDetails를 만들기 위해 repository의 findByUsername을 사용하게 됨
+
+# Postman Test
+
+- ![image](https://user-images.githubusercontent.com/25142537/216815699-19465b98-92a6-4fce-b028-b902959add81.png)
+- ![image](https://user-images.githubusercontent.com/25142537/216815689-a11911d1-5762-4cd8-a703-8841d65abd29.png)
+- ![image](https://user-images.githubusercontent.com/25142537/216815716-4b8f9bec-599f-42aa-9f57-0b33d4626dde.png)
+
+
