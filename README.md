@@ -2,7 +2,7 @@
 
 JWT와 Spring Security를 활용한 로그인 로직을 공부하기 위한 간단한 프로젝트 입니다.
 
-application-API-KEY.properties파일을 생성해야 합니다.
+application-API-KEY.properties파일을 생성해야 합니다. <br>
 해당 파일은 MYSQL_URL, MYSQL_USERNAME, MYSQL_PASSWORD, jwt.header, jwt.secret, jwt.token-validity-in-seconds, jwt.auth 정보를 포함하고 있어야 합니다.
 
 # 설명
